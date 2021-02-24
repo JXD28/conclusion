@@ -1,6 +1,5 @@
 # js
 
-
 ## 1.对象(数组)的深克隆浅克隆
 
 ![](img/%E6%95%B0%E7%BB%841.png)
@@ -13,17 +12,19 @@
 
 ![](img/%E6%95%B0%E5%AD%97%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2.png)
 
-数组与object的区别
+数组与 object 的区别
 
-----
+---
+
 Symbol
 
 ![](img/symbol.png)
 
-自己实现一个symbol
+自己实现一个 symbol
 
 ---
-对象的toString()
+
+对象的 toString()
 
 ![](img/tostring.png)
 
@@ -31,7 +32,8 @@ Symbol
 
 Object.prototype.toString()/valueOf
 
-----
+---
+
 ## 2.自执行函数
 
 ![](img/%E8%87%AA%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0.png)
@@ -54,6 +56,8 @@ alert 打印的都是字符串
 
 ![](img/%E5%8F%98%E6%80%81%E9%A2%98A.png)
 
+输出：'1' '4'
+
 解释:
 
 ![](img/%E5%8F%98%E6%80%81%E9%A2%98%E8%A7%A3%E9%87%8A.png)
@@ -64,12 +68,12 @@ alert 打印的都是字符串
 
 ## 5.深克隆
 
-- JSON.stringify() 函数,正则,日期会有问题
+-   JSON.stringify() 函数,正则,日期会有问题
 
 ![](img/%E6%B7%B1%E5%85%8B%E9%9A%86.png)
 
-- 递归
+-   递归
 
 ![](img/%E9%80%92%E5%BD%92%E6%B7%B1%E5%85%8B%E9%9A%86.png)
 
-for...in循环对象的所有枚举属性，然后再使用hasOwnProperty()方法来忽略继承属性。
+for...in 循环对象的所有枚举属性包括原型链上的，然后再使用 hasOwnProperty()方法来忽略继承属性。
